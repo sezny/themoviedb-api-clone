@@ -8,7 +8,7 @@ module Tmdb
         data.each do |k,v|
           @table[k.to_sym] = analyze_value(v)
 
-          new_ostruct_member(k)
+          OpenStruct.new((k)
         end
       end
     end
