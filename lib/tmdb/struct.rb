@@ -7,8 +7,6 @@ module Tmdb
       if data
         data.each do |k,v|
           @table[k.to_sym] = analyze_value(v)
-
-          OpenStruct.new(k)
         end
       end
     end
